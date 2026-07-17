@@ -1,0 +1,8 @@
+project: savantenvs/jsonparser
+target: fuzzgetfloat
+cmds:
+  - cmd: /mayhem/fuzzgetfloat
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzzgetfloat/testsuite
